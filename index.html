@@ -412,7 +412,7 @@
       transition: all var(--transition);
     }
     .cert-card:hover { border-color: var(--accent2); transform: translateX(4px); }
-    .cert-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(0,229,195,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .cert-icon { width: 44px; height: 44px; border-radius: 12px; --background: rgba(0,229,195,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
     .cert-text h4 { font-family: 'Syne', sans-serif; font-weight: 700; color: var(--heading); font-size: 0.9rem; margin-bottom: 0.2rem; }
     .cert-text p { font-size: 0.78rem; color: var(--muted); }
 
@@ -540,7 +540,7 @@
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
-          <strong>4+</strong>
+          <strong>3</strong>
           <span>Projects</span>
         </div>
         <div class="hero-stat">
@@ -557,7 +557,7 @@
     <div class="hero-visual">
       <div class="avatar-ring">
         <div class="avatar-inner" >
-          <img src="pic.jpg" alt="Rajeev Kumar" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+          <a href="https://ibb.co/8g0x4q79" target="_blank"><img src="https://i.ibb.co/JjKpFVsH/picture.png" alt="Rajeev Kumar" style="width: 400px;; height: 400px; object-fit:fill; border-radius:100% overflow-auto;" /></a>
         </div>
       </div>
       <div class="hero-float-badge badge-top">
@@ -690,6 +690,25 @@
         <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
       </div>
 
+
+          <div class="skill-card reveal" data-delay="250">
+        <div class="skill-header">
+          <div class="skill-icon" style="background:rgba(255,107,107,0.15);color:var(--muted)"><i class="fa-solid fa-crown"></i></div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-name">Streamlit</div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+      </div>
+
+        <div class="skill-card reveal" data-delay="250">
+        <div class="skill-header">
+          <div class="skill-icon" style="background:rgba(255,107,107,0.15);color:var(--accent3)"><i class="fa-solid fa-chart-bar"></i></div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-name">Business Intelligence</div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -704,91 +723,60 @@
     </div>
     <div class="filter-bar reveal">
       <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="python">Python</button>
-      <button class="filter-btn" data-filter="data">Data</button>
-      <button class="filter-btn" data-filter="bi">BI & Excel</button>
+      <button class="filter-btn" data-filter="bi">Power BI</button>
+      <button class="filter-btn" data-filter="excel">Excel</button>
     </div>
     <div class="projects-grid">
 
-      <div class="project-card reveal" data-cat="python">
+
+   <div class="project-card reveal" data-cat="bi">
         <div class="project-top" style="background:linear-gradient(135deg,rgba(124,106,255,0.25),rgba(124,106,255,0.05))">
-          <i class="fa-brands fa-python project-icon" style="color:var(--accent)"></i>
-          <span class="project-tag">Python</span>
+          <i class="fa-solid fa-chart-bar project-icon" style="color:var(--accent)"></i>
+          <span class="project-tag">Power BI</span>
         </div>
         <div class="project-body">
-          <div class="project-title">Python Calculator</div>
-          <div class="project-desc">A fully functional command-line calculator supporting arithmetic operations, history tracking, and error handling — built to deepen Python fundamentals.</div>
+          <div class="project-title">GTA 6 Pre-order Analysis</div>
+          <div class="project-desc">Developed an interactive GTA 6 Preorder Analysis application using Streamlit, SQL, and Power BI to analyze preorder trends, customer behavior, and regional sales performance. The application retrieves and processes preorder data from a SQL database, performs data analysis, and presents key insights through interactive Power BI dashboards embedded within the Streamlit web application.</div>
           <div class="project-techs">
             <span class="tech-tag">Python</span>
-            <span class="tech-tag">Functions</span>
-            <span class="tech-tag">CLI</span>
+             <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Power BI</span>
+        
+            
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Data Cleaning</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/averyonelikesme1" class="project-link" target="_blank">
+            <a href="https://github.com/averyonelikesme1/GTA-VI-preorder-analysis" class="project-link" target="_blank">
               <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-right" style="font-size:0.7rem"></i>
             </a>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal" data-cat="python">
-        <div class="project-top" style="background:linear-gradient(135deg,rgba(255,107,107,0.25),rgba(255,107,107,0.05))">
-          <i class="fa-solid fa-desktop project-icon" style="color:var(--accent3)"></i>
-          <span class="project-tag">Python GUI</span>
+
+
+
+
+
+
+      <div class="project-card reveal" data-cat="bi">
+        <div class="project-top" style="background:linear-gradient(135deg,rgba(124,106,255,0.25),rgba(124,106,255,0.05))">
+          <i class="fa-solid fa-chart-line project-icon" style="color:var(--accent)"></i>
+          <span class="project-tag">Power BI</span>
         </div>
         <div class="project-body">
-          <div class="project-title">Tkinter Login System</div>
-          <div class="project-desc">GUI-based login interface with user authentication, input validation, and session management — built with Python's Tkinter library.</div>
+          <div class="project-title">Jio Finance Stock Performance Dashboard</div>
+          <div class="project-desc">Dashboard tracking Jio Finance's stock performance. Cleaned the underlying data, built Power BI visuals and smart charts, and surfaced top cards and spending patterns.</div>
           <div class="project-techs">
+            <span class="tech-tag">Power BI</span>
+            <span class="tech-tag">DAX</span>
             <span class="tech-tag">Python</span>
-            <span class="tech-tag">Tkinter</span>
-            <span class="tech-tag">GUI</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Data Cleaning</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/averyonelikesme1" class="project-link" target="_blank">
-              <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-right" style="font-size:0.7rem"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-cat="bi">
-        <div class="project-top" style="background:linear-gradient(135deg,rgba(0,229,195,0.25),rgba(0,229,195,0.05))">
-          <i class="fa-solid fa-file-excel project-icon" style="color:var(--accent2)"></i>
-          <span class="project-tag">Excel</span>
-        </div>
-        <div class="project-body">
-          <div class="project-title">Excel Attendance Automation</div>
-          <div class="project-desc">Automated attendance tracking system using advanced Excel formulas, pivot tables, and conditional formatting — reducing manual effort by 80%.</div>
-          <div class="project-techs">
-            <span class="tech-tag">Excel</span>
-            <span class="tech-tag">Pivot Tables</span>
-            <span class="tech-tag">Formulas</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/averyonelikesme1" class="project-link" target="_blank">
-              <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-right" style="font-size:0.7rem"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-cat="bi">
-        <div class="project-top" style="background:linear-gradient(135deg,rgba(255, 107, 188, 0.25),rgba(168, 164, 194, 0.15))">
-          <i class="fa-solid fa-file-excel project-icon" style="color:var(--accent3)"></i>
-          <span class="project-tag">EXCEL</span>
-        </div>
-        <div class="project-body">
-          <div class="project-title">Excel Emergency Room Dashboard</div>
-          <div class="project-desc">Interactive Emergency Room dashboard with slicers,filters, and visualizations for emergency room performance monitoring.</div>
-          <div class="project-techs">
-            <span class="tech-tag">EXCEL</span>
-            <span class="tech-tag">Pivot Tables</span>
-            <span class="tech-tag">Formulas</span>
-            <span class="tech-tag">Charts</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/averyonelikesme1" class="project-link" target="_blank">
+            <a href="https://github.com/averyonelikesme1/jio-finance-stock-analysis" class="project-link" target="_blank">
               <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-right" style="font-size:0.7rem"></i>
             </a>
           </div>
@@ -801,12 +789,13 @@
           <span class="project-tag">Power BI</span>
         </div>
         <div class="project-body">
-          <div class="project-title">Power BI Sales Dashboard</div>
-          <div class="project-desc">Interactive business dashboard with KPIs, slicers, drill-through filters, and trend visualizations for sales performance monitoring.</div>
+          <div class="project-title">Lenskart India Sales Performance Dashboard</div>
+          <div class="project-desc">Dashboard tracking Lenskart's sales performance, orders, and customer ratings. Cleaned data, designed Power BI visuals, analyzed sales trends, and identified top-performing categories and regional hotspots to support management decisions.</div>
           <div class="project-techs">
             <span class="tech-tag">Power BI</span>
-            <span class="tech-tag">DAX</span>
-            <span class="tech-tag">Data Modeling</span>
+            <span class="tech-tag">Data Visualization</span>
+            <span class="tech-tag">Data Processing</span>
+            <span class="tech-tag">Design Optimization</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/averyonelikesme1" class="project-link" target="_blank">
@@ -816,19 +805,21 @@
         </div>
       </div>
 
-      <div class="project-card reveal" data-cat="data">
-        <div class="project-top" style="background:linear-gradient(135deg,rgba(124,106,255,0.2),rgba(0,229,195,0.15))">
-          <i class="fa-solid fa-magnifying-glass-chart project-icon" style="color:var(--accent)"></i>
-          <span class="project-tag">Data Analysis</span>
+      <div class="project-card reveal" data-cat="excel">
+        <div class="project-top" style="background:linear-gradient(135deg,rgba(0,229,195,0.25),rgba(0,229,195,0.05))">
+          <i class="fa-solid fa-file-excel project-icon" style="color:var(--accent2)"></i>
+          <span class="project-tag">Excel</span>
         </div>
         <div class="project-body">
-          <div class="project-title">Data Analysis with Pandas</div>
-          <div class="project-desc">End-to-end EDA project using Pandas and Matplotlib — cleaning messy datasets, uncovering trends, and generating automated reports.</div>
+          <div class="project-title">Excel Attendance Automation</div>
+          <div class="project-desc">Automated attendance management sheet built with advanced Excel formulas and functions. Designed formulas, automated calculations, and improved data accuracy and reporting efficiency.</div>
           <div class="project-techs">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Pandas</span>
-            <span class="tech-tag">Matplotlib</span>
-            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Excel</span>
+            <span class="tech-tag">Pivot Tables</span>
+            <span class="tech-tag">IF</span>
+            <span class="tech-tag">COUNTIF</span>
+            <span class="tech-tag">Data Validation</span>
+            <span class="tech-tag">Conditional Formatting</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/averyonelikesme1" class="project-link" target="_blank">
@@ -851,6 +842,18 @@
       <div class="section-line"></div>
     </div>
     <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Work Experience</div>
+        <div class="timeline-title">Data Analyst</div>
+        <div class="timeline-desc">
+          Cleaned, standardized, and analyzed a dataset of 100,000+ rows across multiple regions using SQL and Python (Pandas) to enable accurate cross-geography KPI tracking for monthly business reporting.<br><br>
+          Designed advanced Excel templates using VLOOKUP, XLOOKUP, and Pivot Tables, cutting manual reporting time by 40% across 4 departments.<br><br>
+          Built and maintained Power BI dashboards with DAX measures to visualize revenue trends, customer mix, and monthly performance metrics — adopted by managers across multiple business units.<br><br>
+          Collaborated with 4 analysts and 2 senior managers to define, validate, and standardize 6 KPIs, improving report consistency and strategic alignment.<br><br>
+          Automated recurring reporting workflows through structured data pipelines, improving data accuracy and reducing manual effort.
+        </div>
+      </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-date">2023 – Present</div>
@@ -887,8 +890,8 @@
       <div class="cert-card">
         <div class="cert-icon">🎓</div>
         <div class="cert-text">
-          <h4>Data Analyst with Python & SQL</h4>
-          <p>Professional Certification</p>
+          <h4>Data Analyst Certification</h4>
+          <p>Ducat, Gurugram</p>
         </div>
       </div>
       <div class="cert-card">
@@ -1071,11 +1074,6 @@
     setTimeout(() => { msg.style.display = 'none'; }, 5000);
     return false;
   }
-
-
-
-
-  
 
   /* ── Active nav on scroll ─────────────────── */
   const sections = document.querySelectorAll('section[id]');
